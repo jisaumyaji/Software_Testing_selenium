@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SauceLab Automated Testing"
+	thread-count="3" parallel="tests" verbose="3">
+
+	<listeners>
+		<listener
+			class-name="com.qa.opencart.testlisteners.ExtentReportListener" />
+	</listeners>
+
+	<test name="Test Scenario 1">
+	<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.opencart.tests.TestFeature_1" />
+		</classes>
+	</test>
+	<!-- <test name="Reg page Test"> <classes> <class name="com.qa.opencart.tests.RegisterPageTest" 
+		/> </classes> </test> -->
+
+
+</suite>
